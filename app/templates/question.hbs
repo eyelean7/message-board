@@ -2,7 +2,7 @@
 
   <h2>{{model.content}}</h2>
   <p>{{model.note}}</p>
-  {{update-question question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+  {{update-question question=model update="update" delete="delete" destroyAnswer="destroyAnswer"}}
   <h4>Reply to {{model.author}}</h4>
   <!-- {{new-answer saveAnswer="saveAnswer" user=model destroyAnswer="destroyAnswer"}} -->
 </div>
