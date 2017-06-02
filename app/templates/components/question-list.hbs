@@ -1,5 +1,5 @@
 {{#each questions as |question|}}
-  <li>{{question.author}} asks, "{{question.content}}"</li>
+  <li>{{#link-to 'question' question.id}}{{question.author}} asks, "{{question.content}}"{{/link-to}}</li>
 {{/each}}
 
     <!-- {{#link-to 'user' user.id}}{{user.name}}{{/link-to}} -->
