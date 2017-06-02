@@ -42,7 +42,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/eyelean7/message-board'
+* `git clone https://github.com/eyelean7/message-board`
 * `cd message-board`
 * `npm install`
 
