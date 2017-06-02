@@ -1,0 +1,28 @@
+{{#if addAnswer}}
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1>New Answer:</h1>
+  </div>
+  <div class="panel-body">
+    <div>
+      <form>
+        <div class="form-group">
+        <label for="author">Author</label>
+        {{input class="form-control" value=author id="author"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Answer</label>
+        {{textarea class="form-control" rows="6" value=content id="content"}}
+      </div>
+      <div class="panel-footer">
+        <button class="btn bg-info"{{action 'saveAnswer'}}>Reply</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{{else}}
+  <button class="btn bg-info"{{action 'answerFormShow'}}>Answer This Question</button>
+{{/if}}

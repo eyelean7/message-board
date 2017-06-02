@@ -10,7 +10,6 @@ export default Ember.Component.extend({
     },
 
     saveQuestion() {
-      console.log('you are getting the content')
       var params = {
         author: this.get('author'),
         content: this.get('content'),
