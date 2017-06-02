@@ -12,6 +12,7 @@ A short introduction of this app could easily go here.
   * Full list in package.json file
 
 2. Specs
+
   |Spec|Description|Input|Output|
   |---|---|---|---|
   |1|User can create a question|author:"User", question:"What is code?", Notes:"I just don't get it."|"User asks, What is code? I just don't get it."|

@@ -11,7 +11,7 @@
       <h4>Answers:</h4>
       <ul>
         {{#each model.answers as |answer|}}
-          <li>{{answer.content}}</li>
+          <li>{{answer.content}} --{{answer.author}}</li>
         {{/each}}
       </ul>
     </div>
