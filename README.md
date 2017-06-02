@@ -3,6 +3,30 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Project Plan
+
+1. Configuration/dependencies
+  * ember
+  * ember-bootstrap
+  * emberfire
+  * Full list in package.json file
+
+2. Specs
+  |Spec|Description|Input|Output|
+  |---|---|---|---|
+  |1|User can create a question|author:"User", question:"What is code?", Notes:"I just don't get it."|"User asks, What is code? I just don't get it."|
+  |2|Home page displays questions|"What is code?" on input form|"User asks, What is code?" on home page|
+  |3|User can answer questions.|author:"Me", answer:"Code is like the sea..."|"Me says, Code is like the sea..."|
+
+3. Integration
+  * Initial route index
+  * Template for new-question component
+  * Template for question-list component
+  * Html page for question
+  * Template for question-tile component
+  * Template for new-answer component
+  * Template for answer-list component
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
