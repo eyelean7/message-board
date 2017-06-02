@@ -16,20 +16,19 @@ export default Ember.Route.extend({
     },
 
     delete(question) {
-      question.destroyRecord();
-      this.transitionTo('index');
+      if (confirm("Do you really want to delete this question?")) {
+        question.destroyRecord();
+        this.transitionTo('index');
+      }
     },
 
     saveAnswer(params) {
-
-      console.log('saving answer');
-      var newAnswer = this.store.createRecord('answer', params);
-      var question = params.question;
-      console.log(question.content)
-      question.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
-        return question.save();
-      });
+        var newAnswer = this.store.createRecord('answer', params);
+        var question = params.question;
+        question.get('answers').addObject(newAnswer);
+        newAnswer.save().then(function() {
+          return question.save();
+        });
       this.transitionTo('question');
     }
   }
