@@ -28,7 +28,7 @@ Message Board allows users to ask and answer questions.
 
 ## Known Bugs
 
-* No update or destroy functionality for answer-list
+* No update or destroy functionality for answers
 * No validation to create questions or answers
 
 ## Prerequisites
