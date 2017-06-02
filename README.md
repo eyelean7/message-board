@@ -1,7 +1,6 @@
-# message-board
+# Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Message Board allows users to ask and answer questions.
 
 ## Project Plan
 
@@ -17,16 +16,20 @@ A short introduction of this app could easily go here.
   |---|---|---|---|
   |1|User can create a question|author:"User", question:"What is code?", Notes:"I just don't get it."|"User asks, What is code? I just don't get it."|
   |2|Home page displays questions|"What is code?" on input form|"User asks, What is code?" on home page|
-  |3|User can answer questions.|author:"Me", answer:"Code is like the sea..."|"Me says, Code is like the sea..."|
+  |3|User can answer questions.|author:"Gary", answer:"Code is like the sea..."|"Gary says, Code is like the sea..."|
 
 3. Integration
   * Initial route index
   * Template for new-question component
   * Template for question-list component
   * Html page for question
-  * Template for question-tile component
   * Template for new-answer component
-  * Template for answer-list component
+  * Template for update-question component
+
+## Known Bugs
+
+* No update or destroy functionality for answer-list
+* No validation to create questions or answers
 
 ## Prerequisites
 
@@ -39,18 +42,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/eyelean7/message-board this repository
+* `git clone https://github.com/eyelean7/message-board'
 * `cd message-board`
 * `npm install`
 
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+* Visit the app at [http://localhost:4200](http://localhost:4200).
 
 ### Running Tests
 
@@ -61,10 +60,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
