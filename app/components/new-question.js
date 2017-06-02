@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
   addQuestion: false,
 
   actions: {
@@ -9,13 +10,14 @@ export default Ember.Component.extend({
     },
 
     saveQuestion() {
+      console.log('you are getting the content')
       var params = {
         author: this.get('author'),
-        question: this.get('question'),
+        content: this.get('content'),
         note: this.get('note'),
       };
-      this.set('addQuestion', false);
       this.sendAction('saveQuestion', params)
+      this.set('addQuestion', false);
     }
   }
 });
